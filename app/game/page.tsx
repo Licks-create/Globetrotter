@@ -69,7 +69,7 @@ export default function GamePage() {
       })
       if (!response.ok) {
         const data = await response.json()
-        console.log({data})
+        console.log(data.error)
         // throw new Error(data.error || "Failed to update")
       }
     } catch (err) {
