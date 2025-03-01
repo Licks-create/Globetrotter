@@ -1,0 +1,146 @@
+[
+  {
+    "city": "Paris",
+    "country": "France",
+    "clues": [
+      "This city is home to a famous tower that was once criticized for its design.",
+      "It has a river running through it called the Seine, known for its scenic boat tours."
+    ],
+    "fun_fact": [
+      "The Eiffel Tower was originally intended to be dismantled after 20 years.",
+      "Paris has over 130 museums, including the world-famous Louvre."
+    ],
+    "trivia": [
+      "This city is known as the 'City of Light' because it was an early adopter of street lighting.",
+      "The Notre-Dame Cathedral took nearly 200 years to complete."
+    ]
+  },
+  {
+    "city": "New York City",
+    "country": "United States",
+    "clues": [
+      "This city has a statue gifted by France as a symbol of friendship.",
+      "It is home to one of the world’s most famous financial districts, located on Wall Street."
+    ],
+    "fun_fact": [
+      "Times Square was originally called Longacre Square until 1904.",
+      "There are more than 800 languages spoken in this city, making it one of the most linguistically diverse places in the world."
+    ],
+    "trivia": [
+      "The Empire State Building was once the tallest building in the world.",
+      "This city has five boroughs: Manhattan, Brooklyn, Queens, The Bronx, and Staten Island."
+    ]
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "clues": [
+      "This city is home to the world's busiest pedestrian crossing.",
+      "It has a famous tower inspired by the Eiffel Tower but painted in red and white."
+    ],
+    "fun_fact": [
+      "Tokyo was originally a small fishing village called Edo.",
+      "The city has vending machines that sell everything from hot meals to umbrellas."
+    ],
+    "trivia": [
+      "This city has the most Michelin-starred restaurants in the world.",
+      "It was the host of the 1964 and 2020 Olympic Games."
+    ]
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "clues": [
+      "This city has a world-famous opera house with a unique sail-like design.",
+      "It is home to one of the world’s largest natural harbors."
+    ],
+    "fun_fact": [
+      "The Sydney Harbour Bridge is known as the ‘Coathanger’ due to its shape.",
+      "The city was founded as a British penal colony in 1788."
+    ],
+    "trivia": [
+      "Sydney has over 100 beaches, including the famous Bondi Beach.",
+      "The Opera House’s roof is made of over 1 million white tiles."
+    ]
+  },
+  {
+    "city": "Cairo",
+    "country": "Egypt",
+    "clues": [
+      "This city is home to one of the Seven Wonders of the Ancient World.",
+      "It has a famous river that has been crucial to its history and development."
+    ],
+    "fun_fact": [
+      "The Great Pyramid of Giza was the tallest man-made structure for over 3,800 years.",
+      "Cairo is the largest city in Africa by population."
+    ],
+    "trivia": [
+      "The city’s name means ‘The Victorious’ in Arabic.",
+      "Cairo has one of the oldest universities in the world, Al-Azhar University."
+    ]
+  },
+  {
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "clues": [
+      "This city has a famous statue of Christ atop a mountain.",
+      "It hosts one of the world’s largest carnival festivals every year."
+    ],
+    "fun_fact": [
+      "The name of this city means 'River of January' in Portuguese.",
+      "Rio’s beaches, such as Copacabana and Ipanema, are world-famous."
+    ],
+    "trivia": [
+      "The city was the capital of Brazil until 1960.",
+      "Its Maracanã Stadium once held a record-breaking crowd of 199,854 people."
+    ]
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "clues": [
+      "This city was once divided by a wall for almost three decades.",
+      "It is home to the famous Brandenburg Gate."
+    ],
+    "fun_fact": [
+      "Berlin has more bridges than Venice, with over 1,700 spanning its rivers and canals.",
+      "The Berlin Wall fell in 1989, leading to German reunification."
+    ],
+    "trivia": [
+      "The city has the largest train station in Europe.",
+      "Berlin has a museum island featuring five world-renowned museums."
+    ]
+  },
+  {
+    "city": "Moscow",
+    "country": "Russia",
+    "clues": [
+      "This city has a famous square with colorful onion-domed churches.",
+      "It is home to the Kremlin, the seat of government."
+    ],
+    "fun_fact": [
+      "Moscow’s Metro stations are often referred to as 'underground palaces' due to their elaborate decor.",
+      "The city experiences extremely cold winters, sometimes reaching -30°C (-22°F)."
+    ],
+    "trivia": [
+      "Moscow has the largest population of any European city.",
+      "The famous St. Basil’s Cathedral was built in 1561."
+    ]
+  },
+  {
+    "city": "Cape Town",
+    "country": "South Africa",
+    "clues": [
+      "This city is known for its iconic flat-topped mountain.",
+      "It has a historic waterfront and a prison island that once held Nelson Mandela."
+    ],
+    "fun_fact": [
+      "Table Mountain has more plant species than the entire United Kingdom.",
+      "Cape Town is home to one of the world's largest breeding colonies of African penguins."
+    ],
+    "trivia": [
+      "The city was the first in South Africa to host the FIFA World Cup.",
+      "It was founded in 1652 as a supply station for Dutch ships."
+    ]
+  }
+]

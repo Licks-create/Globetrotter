@@ -1,0 +1,63 @@
+[
+  {
+    "username": "vivek",
+    "score": {
+      "correct": 0,
+      "incorrect": 0
+    },
+    "createdAt": "2025-02-28T15:48:04.790Z"
+  },
+  {
+    "username": "ojha",
+    "score": {
+      "correct": 0,
+      "incorrect": 0
+    },
+    "createdAt": "2025-02-28T15:48:42.421Z"
+  },
+  {
+    "username": "vivekanand",
+    "score": {
+      "correct": 0,
+      "incorrect": 0
+    },
+    "createdAt": "2025-03-01T08:24:57.095Z"
+  },
+  {
+    "username": "rakesh",
+    "score": {
+      "correct": 0,
+      "incorrect": 0
+    },
+    "createdAt": "2025-03-01T08:43:25.839Z"
+  },
+  {
+    "username": "abc",
+    "score": {
+      "correct": 0,
+      "incorrect": 0
+    },
+    "createdAt": "2025-03-01T09:16:06.503Z"
+  },
+  {
+    "username": "xyz",
+    "score": {},
+    "createdAt": "2025-03-01T09:17:35.355Z"
+  },
+  {
+    "username": "bhi",
+    "score": {
+      "correct": 0,
+      "incorrect": 22
+    },
+    "createdAt": "2025-03-01T10:00:50.548Z"
+  },
+  {
+    "username": "bhek",
+    "score": {
+      "correct": 5,
+      "incorrect": 16
+    },
+    "createdAt": "2025-03-01T10:17:49.236Z"
+  }
+]
