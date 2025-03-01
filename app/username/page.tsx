@@ -2,7 +2,7 @@
 
 import type React from "react"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useRouter } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -13,6 +13,14 @@ export default function UsernamePage() {
   const [username, setUsername] = useState("")
   const [error, setError] = useState("")
   const router = useRouter()
+
+  useEffect(()=>{
+    const storedUsername = localStorage.getItem("globetrotter_username")
+    if (storedUsername) {
+      router.push("/game")
+      return
+    }
+  },[])
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()

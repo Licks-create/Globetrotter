@@ -34,50 +34,55 @@ export default function GamePage() {
       router.push("/username")
       return
     }
-    const checkUser=async()=>{
+    const checkUser = async () => {
 
       try {
-      const response = await fetch("/api/users/"+storedUsername+"/score")
-      if (!response.ok) {
-        const data = await response.json()
-        throw new Error(data.message || "User Not Found")
+        const response = await fetch("/api/users/" + storedUsername + "/score")
+        if (!response.ok) {
+          const data = await response.json()
+          throw new Error(data.message || "User Not Found")
+        }
+        else {
+          const data = await response.json()
+          setScore({ correct: 0, incorrect: 0, ...data })
+        }
+
+      } catch (err) {
+        console.error(err instanceof Error ? err.message : "An error occurred")
       }
-      else{
-        const data = await response.json()
-        setScore({correct:0,incorrect:0,...data})
-      }
-    
-    } catch (err) {
-      console.error(err instanceof Error ? err.message : "An error occurred")
     }
-  }
     checkUser()
     setUsername(storedUsername)
     loadNewDestination()
   }, [router])
 
-  useEffect(()=>{
-    const updateUser=async()=>{
+  useEffect(() => {
+    const storedUsername = localStorage.getItem("globetrotter_username")
+    if (!storedUsername) {
+      router.push("/username")
+      return
+    }
+    const updateUser = async () => {
       const storedUsername = localStorage.getItem("globetrotter_username")
       try {
-      const response = await fetch("/api/users/"+storedUsername+"/score",{
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username,...score }),
-      })
-      if (!response.ok) {
-        const data = await response.json()
-        console.log(data.error)
-        // throw new Error(data.error || "Failed to update")
+        const response = await fetch("/api/users/" + storedUsername + "/score", {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, ...score }),
+        })
+        if (!response.ok) {
+          const data = await response.json()
+          console.log(data.error)
+          // throw new Error(data.error || "Failed to update")
+        }
+      } catch (err) {
+        console.error(err instanceof Error ? err.message : "An error occurred")
       }
-    } catch (err) {
-      console.error(err instanceof Error ? err.message : "An error occurred")
     }
-  }
-  updateUser()
-  },[options])
+    updateUser()
+  }, [options])
   const loadNewDestination = async () => {
     setIsLoading(true)
     setSelectedOption(null)
@@ -99,7 +104,7 @@ export default function GamePage() {
   }
 
   const handleAnswer = (option: string) => {
-    if (selectedOption !== null || !currentDestination) return 
+    if (selectedOption !== null || !currentDestination) return
 
     setSelectedOption(option)
     const correct = option === currentDestination.city
@@ -144,8 +149,12 @@ export default function GamePage() {
           <h1 className="text-xl font-bold text-gray-900">Globetrotter</h1>
         </div>
         <div className="flex items-center space-x-2">
-          <Trophy className="h-5 w-5 text-yellow-500" />
           <span className="text-sm font-medium">
+            Hi, {localStorage.getItem("globetrotter_username")}
+          </span>
+          <span className="text-sm font-medium flex gap-2">
+            <Trophy className="h-5 w-5 text-yellow-500" />
+
             {score.correct} correct / {score.incorrect} incorrect
           </span>
         </div>
@@ -179,15 +188,14 @@ export default function GamePage() {
                             ? "default"
                             : "outline"
                       }
-                      className={`w-full justify-start text-left ${
-                        selectedOption === option
+                      className={`w-full justify-start text-left ${selectedOption === option
                           ? isCorrect
                             ? "bg-green-600 hover:bg-green-700"
                             : "bg-red-600 hover:bg-red-700"
                           : selectedOption !== null && option === currentDestination.city
                             ? "bg-green-600 hover:bg-green-700"
                             : ""
-                      }`}
+                        }`}
                       onClick={() => handleAnswer(option)}
                       disabled={selectedOption !== null}
                     >

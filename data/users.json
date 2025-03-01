@@ -2,8 +2,8 @@
   {
     "username": "vivek",
     "score": {
-      "correct": 9,
-      "incorrect": 18
+      "correct": 10,
+      "incorrect": 24
     },
     "createdAt": "2025-02-28T15:48:04.790Z"
   },
@@ -67,5 +67,13 @@
       "incorrect": 15
     },
     "createdAt": "2025-03-01T11:49:33.099Z"
+  },
+  {
+    "username": "bojha",
+    "score": {
+      "correct": 7,
+      "incorrect": 7
+    },
+    "createdAt": "2025-03-01T12:11:42.715Z"
   }
 ]
