@@ -1,9 +1,13 @@
 import { NextResponse } from "next/server"
 import  destinations1  from "@/data/cities_data.json"
-
+let qn=0;
 export async function GET() {
   try {
-    const randomIndex = Math.floor(Math.random() * destinations1.length)
+    const randomIndex = qn++;
+
+    if(qn>destinations1.length){
+      qn=0;
+    }
     const selectedDestination = destinations1[randomIndex]
     console.log(randomIndex)
     let options = [selectedDestination.city]
