@@ -21,7 +21,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800">Guess Destinations</h2>
                 <p className="mt-2 text-gray-600">
-                  You'll be presented with cryptic clues about a famous place. Read the clues carefully and select the
+                  You&quot; ll be presented with cryptic clues about a famous place. Read the clues carefully and select the
                   correct destination from the options provided.
                 </p>
               </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800">Earn Points</h2>
                 <p className="mt-2 text-gray-600">
-                  Each correct answer adds to your score. After answering, you'll unlock fun facts and trivia about the
+                  Each correct answer adds to your score. After answering, you&quot; ll unlock fun facts and trivia about the
                   destination, whether your guess was right or wrong.
                 </p>
               </div>
@@ -47,7 +47,7 @@ export default function AboutPage() {
               <div>
                 <h2 className="text-xl font-semibold text-gray-800">Challenge Friends</h2>
                 <p className="mt-2 text-gray-600">
-                  Use the "Challenge a Friend" button to share your score and invite others to play. They'll see your
+                  Use the &quot;Challenge a Friend&quot; button to share your score and invite others to play. They&quot; ll see your
                   score and can try to beat it!
                 </p>
               </div>
