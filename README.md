@@ -64,7 +64,7 @@ Globetrotter Challenge is an interactive web-based game that tests players' know
 
 1. **Clone the Repository**:
    ```sh
-   git clone https://github.com/your-username/Globetrotter.git
+   git clone https://git@github.com:Licks-create/Globetrotter.git
    ```
 2. **Navigate to the Project Directory**:
    ```sh
