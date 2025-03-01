@@ -48,9 +48,9 @@ export async function PUT(request: Request, { params }: { params: { username: st
     const { username='users', correct=0, incorrect=5} = await request.json()
 
     const users = readUsersData()
-
     const userIndex = users.findIndex((user: any) => user.username === username)
-
+    
+    console.log({userIndex})
     if (userIndex === -1) {
       return NextResponse.json({ error: "User not found" }, { status: 404 })
     }
@@ -61,7 +61,7 @@ export async function PUT(request: Request, { params }: { params: { username: st
     }
 
     fs.writeFileSync(dataFilePath, JSON.stringify(users, null, 2))
-
+ 
     return NextResponse.json({
       success: true,
       message: "Score updated successfully",

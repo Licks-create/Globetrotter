@@ -40,7 +40,7 @@ export default function GamePage() {
       const response = await fetch("/api/users/"+storedUsername+"/score")
       if (!response.ok) {
         const data = await response.json()
-        throw new Error(data.message || "Failed to register username")
+        throw new Error(data.message || "User Not Found")
       }
       else{
         const data = await response.json()
@@ -57,7 +57,6 @@ export default function GamePage() {
   }, [router])
 
   useEffect(()=>{
-    console.log({score})
     const updateUser=async()=>{
       const storedUsername = localStorage.getItem("globetrotter_username")
       try {
@@ -70,7 +69,8 @@ export default function GamePage() {
       })
       if (!response.ok) {
         const data = await response.json()
-        throw new Error(data.message || "Failed to register username")
+        console.log({data})
+        // throw new Error(data.error || "Failed to update")
       }
     } catch (err) {
       console.error(err instanceof Error ? err.message : "An error occurred")
