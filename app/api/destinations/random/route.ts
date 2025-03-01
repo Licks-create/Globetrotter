@@ -5,7 +5,7 @@ export async function GET() {
   try {
     const randomIndex = qn++;
 
-    if(qn>destinations1.length){
+    if(qn>=destinations1.length-1){
       qn=0;
     }
     const selectedDestination = destinations1[randomIndex]
